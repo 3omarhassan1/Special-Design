@@ -474,7 +474,7 @@ header .container .links li .active {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: 300px;
     background-color: var(--bgcolor);
     border-radius: 8px;
     right: 0;
@@ -485,6 +485,7 @@ header .container .links li .active {
     display: inline-block;
     padding: 16px;
     margin: 0;
+    color: var(--textcolor);
   }
 
   header .container .bars .links li a {
@@ -493,6 +494,7 @@ header .container .links li .active {
 
   header .container .links li:hover a {
     padding-left: 20px;
+    scale: 1;
   }
 
   header .container .bars i {
@@ -983,6 +985,7 @@ header .container .links li .active {
 
 .contact input,
 .contact textarea {
+  color: var(--textcolor);
   border: var(--pcolor) 1px solid;
   background-color: transparent;
   padding: 10px;
@@ -1157,8 +1160,6 @@ footer .envelope:hover {
 }
 
 footer .container .box>p {
-  /* text-align: center; */
-  /* color: var(--pcolor); */
   padding: 20px;
   margin: 0;
   font-size: 20px;
