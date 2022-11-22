@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/special.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+  <link rel="icon" href="imgs/Logo.svg">
+  <title>Special Omar</title>
+
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="settings">
+    <div class="gearcont"> <i class="fas fa-gear"></i></div>
+
+    <div class="setcont shad">
+      <h2>Colors</h2>
+      <ul class="colors">
+        <li class="active" data-color="#3498DB"></li>
+        <li data-color="#1ABC9C"></li>
+        <li data-color="#9B59B6"></li>
+        <li data-color="#E67E22"></li>
+        <li data-color="#E74C3C"></li>
+      </ul>
+    </div>
+
+    <div class="setcont shad">
+      <h2>Random Backgrounds</h2>
+      <div class="bg-box cont">
+        <div class="yes" data-value="yes">Yes</div>
+        <div class="no" data-value="no">No</div>
+      </div>
+    </div>
+
+    <div class="setcont shad">
+      <h2>Bullets Display</h2>
+      <div class="bul-box cont">
+        <div class="yes" data-value="yes">Yes</div>
+        <div class="no" data-value="no">No</div>
+      </div>
+    </div>
+
+    <div class="setcont shad">
+      <h2>Theme</h2>
+      <div class="theme-box cont">
+        <div class="dark-but" data-th="yes">Dark</div>
+        <div class="light" data-th="no">Light</div>
+      </div>
+    </div>
+
+    <div class="reset shad">Reset Options</div>
+
+
+  </div>
+
+  <div class="bullets">
+    <div class="bullet" data-sec=".landing">
+      <div class="tip">Home</div>
+    </div>
+    <div class="bullet" data-sec=".about">
+      <div class="tip">About Us</div>
+    </div>
+    <div class="bullet" data-sec=".skills">
+      <div class="tip">Skills</div>
+    </div>
+    <div class="bullet" data-sec=".gallery">
+      <div class="tip">Gallery</div>
+    </div>
+    <div class="bullet" data-sec=".time">
+      <div class="tip">Timeline</div>
+    </div>
+    <div class="bullet" data-sec=".features">
+      <div class="tip">Features</div>
+    </div>
+    <div class="bullet" data-sec=".testimonials">
+      <div class="tip">Testimonials</div>
+    </div>
+    <div class="bullet" data-sec=".contact">
+      <div class="tip">Contact Us</div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <a href="#">
+        <div class="logo">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path class="fill-white"
+                  d="M549.88,274.94c0,151.84-123.1,274.94-274.94,274.94S0,426.78,0,274.94,123.09,0,274.94,0,549.88,123.09,549.88,274.94ZM274.94,45.82C148.4,45.82,45.82,148.4,45.82,274.94S148.4,504.05,274.94,504.05,504.05,401.47,504.05,274.94,401.47,45.82,274.94,45.82Z" />
+                <path class="fill-main"
+                  d="M286.39,69.05C395,75,481.14,164.9,481.14,274.94S395,474.88,286.39,480.83m45.83-56a160.45,160.45,0,0,0,0-299.7M286.39,68.73v412m45.83-355.65v299.7" />
+                <path class="fill-main"
+                  d="M263.48,480.83a206.13,206.13,0,0,1-45.82-7.75V297.85H116.18a160.46,160.46,0,0,0,78.57,116V465a206.29,206.29,0,0,1,0-380.06V136a160.48,160.48,0,0,0-78.57,116H217.66V76.8h0a205.55,205.55,0,0,1,45.82-7.74h0V480.27" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <p>OMAR HASSAN <br><span>DEVELOPMENTS</span></p>
+      </a>
+      <div class="links-box">
+        <div class="bars">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="links">
+          <li><a href="#about" data-sec=".about">About Us</a></li>
+          <li><a href="#skills" data-sec=".skills">Skills</a></li>
+          <li><a href="#gallery" data-sec=".gallery">Gallery</a></li>
+          <li><a href="#time" data-sec=".time">Timeline</a></li>
+          <li><a href="#features" data-sec=".features">Features</a></li>
+          <li><a href="#testimonials" data-sec=".testimonials">Testimonials</a></li>
+          <li><a href="#contact" data-sec=".contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="landing" id="home">
+    <div class="overlay"></div>
+    <div class="text">
+      <h1>Simply <span>Awesome.</span></h1>
+      <p></p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h1>
+        About <span>Us</span>
+      </h1>
+      <div class="box">
+        <div class="text">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore a amet quas velit, esse quam doloribus
+            maxime vero dolorem ipsam praesentium debitis explicabo omnis eligendi quia consequatur, veritatis sunt
+            accusamus.</p>
+        </div>
+        <div class="img">
+          <img src="imgs/about-us.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <h1>Our <span>Skills</span></h1>
+
+      <div class="skill shad">
+        <div class="name">
+          HTML
+        </div>
+        <div class="prbar">
+          <span data-pr="90%"></span>
+        </div>
+        <div class="cent">90%</div>
+      </div>
+
+      <div class="skill shad">
+        <div class="name">
+          CSS
+        </div>
+        <div class="prbar">
+          <span data-pr="80%"></span>
+        </div>
+        <div class="cent">80%</div>
+      </div>
+
+      <div class="skill shad">
+        <div class="name">
+          JavaScript
+        </div>
+        <div class="prbar">
+          <span data-pr="70%"></span>
+        </div>
+        <div class="cent">70%</div>
+      </div>
+
+      <div class="skill shad">
+        <div class="name">
+          Python
+        </div>
+        <div class="prbar">
+          <span data-pr="75%"></span>
+        </div>
+        <div class="cent">75%</div>
+      </div>
+
+      <div class="skill shad">
+        <div class="name">
+          PHP
+        </div>
+        <div class="prbar">
+          <span data-pr="70%"></span>
+        </div>
+        <div class="cent">70%</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h1>Our <span>Gallery</span></h1>
+      <div class="box">
+        <img src="imgs/01.jpg" alt="Image One" class="shad">
+        <img src="imgs/02.jpg" alt="Image Two" class="shad">
+        <img src="imgs/03.jpg" alt="Image Three" class="shad">
+        <img src="imgs/04.jpg" alt="Image Four" class="shad">
+        <img src="imgs/05.jpg" alt="Image Five" class="shad">
+        <img src="imgs/06.jpg" alt="Image Six" class="shad">
+        <img src="imgs/07.jpg" alt="Image Seven" class="shad">
+        <img src="imgs/08.jpg" alt="Image Eight" class="shad">
+        <img src="imgs/09.jpg" alt="Image Nine" class="shad">
+        <img src="imgs/10.png" alt="Image Ten" class="shad">
+      </div>
+    </div>
+  </section>
+
+  <section class="time" id="time">
+    <div class="container">
+      <h1>Time<span>line</span></h1>
+
+      <div class="content">
+
+        <div class="year">2020</div>
+        <div class="left shad">
+          <h2>Event Heading</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos expedita similique tempora iste
+            consectetur maiores consequatur corrupti omnis nesciunt commodi error eveniet quisquam atque officia
+            laudantium totam corporis, sunt excepturi.</p>
+        </div>
+
+        <div class="year">2021</div>
+        <div class="right shad">
+          <h2>Event Heading</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos expedita similique tempora iste
+            consectetur maiores consequatur corrupti omnis nesciunt commodi error eveniet quisquam atque officia
+            laudantium totam corporis, sunt excepturi.</p>
+        </div>
+
+        <div class="year">2022</div>
+        <div class="left shad">
+          <h2>Event Heading</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos expedita similique tempora iste
+            consectetur maiores consequatur corrupti omnis nesciunt commodi error eveniet quisquam atque officia
+            laudantium totam corporis, sunt excepturi.</p>
+        </div>
+
+        <div class="right shad">
+          <h2>Event Heading</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos expedita similique tempora iste
+            consectetur maiores consequatur corrupti omnis nesciunt commodi error eveniet quisquam atque officia
+            laudantium totam corporis, sunt excepturi.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h1>Our <span>Features</span></h1>
+      <div class="cont">
+
+        <div class="feat shad">
+          <img src="imgs/programming.svg" alt="" srcset="">
+          <h2>Programming</h2>
+          <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+        </div>
+
+        <div class="feat shad">
+          <img src="imgs/web-design.svg" alt="" srcset="">
+          <h2>Web Design</h2>
+          <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+        </div>
+
+        <div class="feat shad">
+          <img src="imgs/mobile-app.svg" alt="" srcset="">
+          <h2>Mobile Applications</h2>
+          <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+        </div>
+
+        <div class="feat shad">
+          <img src="imgs/graphic-design.svg" alt="" srcset="">
+          <h2>Graphic Design</h2>
+          <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+        </div>
+
+        <div class="feat shad">
+          <img src="imgs/hosting-icon.svg" alt="" srcset="">
+          <h2>Hosting Services</h2>
+          <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+        </div>
+
+        <div class="feat shad">
+          <img src="imgs/advertising.svg" alt="" srcset="">
+          <h2>Advertising</h2>
+          <p>We are professional marketeers, we will do anything you imagine in no time.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h1><span>Testimonials</span></h1>
+      <div class="cont">
+
+        <div class="test shad">
+          <p>The organization has the best team ever in programming, web development, material designing and
+            advertising.</p>
+          <div class="info">
+            <img src="imgs/avatar-01.jpg" alt="">
+            <div class="text">
+              <h3>Omar Hassan</h3>
+              <p>Organization CEO</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="test shad">
+          <p>The organization has the best team ever in programming, web development, material designing and
+            advertising.</p>
+          <div class="info">
+            <img src="imgs/avatar-02.jpg" alt="">
+            <div class="text">
+              <h3>Ahmed Anwar</h3>
+              <p>Financial Manager</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="test shad">
+          <p>The organization has the best team ever in programming, web development, material designing and
+            advertising.</p>
+          <div class="info">
+            <img src="imgs/avatar-03.png" alt="">
+            <div class="text">
+              <h3>Adham Saber</h3>
+              <p>Project Manager</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="overlay"></div>
+    <div class="container">
+      <h1>Contact <span>Us</span></h1>
+      <div class="cont">
+        <input type="text" placeholder="Your Name">
+        <input type="tel" placeholder="Your Phone Number">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Subject">
+        <textarea name="text" placeholder="Your Message"></textarea>
+        <input type="button" value="Send" class="shad">
+      </div>
+    </div>
+  </section>
+
+  <footer class="dark">
+    <div class="container">
+      <div class="box">
+        <a href="#">
+          <div class="logo">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560">
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <path class="fill-white"
+                    d="M549.88,274.94c0,151.84-123.1,274.94-274.94,274.94S0,426.78,0,274.94,123.09,0,274.94,0,549.88,123.09,549.88,274.94ZM274.94,45.82C148.4,45.82,45.82,148.4,45.82,274.94S148.4,504.05,274.94,504.05,504.05,401.47,504.05,274.94,401.47,45.82,274.94,45.82Z" />
+                  <path class="fill-main"
+                    d="M286.39,69.05C395,75,481.14,164.9,481.14,274.94S395,474.88,286.39,480.83m45.83-56a160.45,160.45,0,0,0,0-299.7M286.39,68.73v412m45.83-355.65v299.7" />
+                  <path class="fill-main"
+                    d="M263.48,480.83a206.13,206.13,0,0,1-45.82-7.75V297.85H116.18a160.46,160.46,0,0,0,78.57,116V465a206.29,206.29,0,0,1,0-380.06V136a160.48,160.48,0,0,0-78.57,116H217.66V76.8h0a205.55,205.55,0,0,1,45.82-7.74h0V480.27" />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <p>OMAR HASSAN <br><span>DEVELOPMENTS</span></p>
+        </a>
+
+        <!-- 
+https://www.facebook.com/3omarhassan1
+https://twitter.com/3omarhassan1
+https://www.instagram.com/3omarhassan1
+https://www.youtube.com/@3omarhassan1
+https://github.com/3omarhassan1
+https://www.linkedin.com/in/3omarhassan1
+https://www.behance.net/3omarhassan1
+-->
+
+        <div class="social">
+          <div class="one">
+            <a href="https://www.facebook.com/3omarhassan1" target="_blank" class="facebook"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/3omarhassan1" target="_blank" class="twitter"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/3omarhassan1" target="_blank" class="instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@3omarhassan1" target="_blank" class="youtube"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+          <div class="two">
+            <a href="https://github.com/3omarhassan1" target="_blank" class="github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/3omarhassan1" target="_blank" class="linked"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.behance.net/3omarhassan1" target="_blank" class="behance"><i
+                class="fab fa-behance"></i></a>
+            <a href="mailto:omar.eg55@yahoo.com" target="_blank" class="envelope"><i class="fas fa-envelope"></i></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <p>We are dedicated to provide the best service in the market concerning Programming, Web Design and Web
+          Development.</p>
+
+        <div class="info">
+          <div class="loc">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Abbas Al-Aqqad St., Fifth Stage, Ismailia, Egypt.</p>
+          </div>
+          <a href="tel:+201207219842" target="_blank">
+            <i class="fas fa-phone"></i>
+            <p>+20 120 721 9842</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="rights">
+    <div class="container">
+      <i class="far fa-copyright"></i> 2022 omar hassan developments, all rights reserved.
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
