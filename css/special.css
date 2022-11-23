@@ -225,15 +225,24 @@ img {
 /* start settings */
 
 .settings {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+
   position: fixed;
   top: 0;
   left: -250px;
-  /* left: 0; */
   width: 250px;
   height: 100vh;
   background-color: var(--bgcolor);
   z-index: 2;
-  transition: var(--trans)
+  transition: var(--trans);
+}
+
+.settings .set-flow{
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .settings.open {
