@@ -6,7 +6,7 @@ function handleActive(element) {
   element.classList.add("active")
 }
 
-function scrollTo(elements) {
+function scrollToo(elements) {
   elements.forEach(ele => {
     ele.addEventListener("click", (e) => {
       e.preventDefault()
@@ -151,11 +151,11 @@ document.querySelectorAll(".theme-box div").forEach(div => {
 })
 
 //links scroll
-scrollTo(document.querySelectorAll(".links a"))
+scrollToo(document.querySelectorAll(".links a"))
 
 //bullets scroll
 
-scrollTo(document.querySelectorAll(".bullet"))
+scrollToo(document.querySelectorAll(".bullet"))
 
 //bullets yes or no
 let bulValue
@@ -187,8 +187,23 @@ document.querySelectorAll(".bul-box div").forEach(div => {
 })
 
 
-//skills
+//skills and to up
+let up = document.querySelector(".to-up")
+
+up.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior:"smooth"
+  })
+})
+
 window.onscroll = () => {
+  if (this.scrollY >= 800) {
+    up.style.opacity = "1"
+  } else {
+    up.style.opacity = "0"
+  }
+
   if (window.pageYOffset >= document.querySelector(".skills").offsetTop + document.querySelector(".skills").offsetHeight - this.innerHeight) {
     document.querySelectorAll(".prbar span").forEach(skill => {
       skill.style.width = skill.dataset.pr
@@ -239,7 +254,6 @@ imgs.forEach(img => {
   })
 
 })
-console.log(imgs)
 
 // reset
 
@@ -263,3 +277,32 @@ document.addEventListener("click", (e) => {
     document.querySelector(".links").classList.remove("open")
   }
 })
+
+//scroll bar
+let scrlProg = document.querySelector(".scrollprogress")
+
+let scrlHt = document.documentElement.scrollHeight - document.documentElement.clientHeight
+
+window.addEventListener("scroll", () => {
+  let scrlTop = document.documentElement.scrollTop
+
+  scrlProg.style.width = `${(scrlTop/scrlHt)*100}%`
+})
+
+// loader
+
+loader = document.querySelector(".loader")
+
+window.onload = () => {
+  loader.querySelector(".loader-cont").style.bottom = "50%"
+}
+
+
+setTimeout(() => {
+  loader.style.cssText = "opacity: 0; z-index: 0"
+  loader.querySelector(".loader-cont").style.bottom = "125%"
+}, 2000)
+
+setTimeout(() => {
+  loader.style.cssText = "z-index: -1"
+}, 3000)
